@@ -1,0 +1,44 @@
+/* ------------ Reset ------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- Variables --------------*/
+:root {
+--main-gray: #ebebeb;
+--main-grayS: #a8dadc;
+--main-white: #ffffff;
+--main-beer: #dbdc9d;
+
+}
+
+
+/* --------------- General style ------------------------- */
+body {
+    background: var(--main-gray);
+    min-width: 1280px;
+}
+
+/* --------------------------- Header ---------------------------- */
+
+/* nav */
+nav {
+    background: var(--main-grayS);
+    height: auto;
+    position: fixed;
+    width: 100%;
+    padding: 0 0.5rem;
+    box-shadow: 0px 5px 5px rgba(17, 17, 26, 0.1);
+}
+.logo img {
+    height: 85px;
+}
+.nav-icon img{
+    width: 20px;
+}
+
+
+
+/* --------------------------- Main ---------------------------- */
