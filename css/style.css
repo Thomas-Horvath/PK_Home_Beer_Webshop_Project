@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 
 /* ---------------- Variables --------------*/
@@ -20,7 +22,22 @@ body {
     background: var(--main-gray);
     min-width: 1280px;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+.btn {
+    background-color: var(--main-gray);
+    color: black;
+    border: none;
+    transition: .2s linear;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn:hover {
+   cursor: pointer;
+   outline: 3px solid #e6b90a;
+   transform: scale(1.1); 
+}
 /* --------------------------- Header ---------------------------- */
 
 /* nav */
@@ -28,6 +45,9 @@ nav {
     background: var(--main-grayS);
     height: auto;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
     padding: 0 0.5rem;
     box-shadow: 0px 5px 5px rgba(17, 17, 26, 0.1);
@@ -35,10 +55,167 @@ nav {
 .logo img {
     height: 85px;
 }
-.nav-icon img{
-    width: 20px;
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-menu li {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+}
+.nav-menu li a:hover {
+    cursor: pointer;
+    color: rgba(0,0,0,0.489);
+}
+.cart-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.nav-icon img {
+    width: 1.2rem;
+}
+.cart-area span, .cart-text {
+    font-size: 1.1rem;
+}
+.cart-area span:hover {
+    cursor: pointer;
+    color: rgba(0,0,0,0.489);
+}
+
+/* --------------------------- Main ---------------------------- */
+/*  -------- banner ------------- */
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,.425), rgba(0,0,0,.425) ), url("../assets/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.banner h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 1rem;
+}
+.banner h2 {
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
 }
 
 
 
-/* --------------------------- Main ---------------------------- */
+/* ---------- welcome ------------------- */
+#welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 0 1rem 2rem 1rem;
+    gap: 2.5rem;
+    height: auto;
+    margin-top: -8rem;
+}
+
+.welcome-card {
+    background-color: var(--main-white);
+    width: 25rem;
+    height: 20rem;
+    box-shadow:1.95px 1.95px 2.6px rgba(0,0,0,.15) ;
+    outline: 8px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-white);
+
+}
+.welcome-card button {
+    width: 8.2rem;
+    height: 3rem;
+    text-shadow:  1px 1px 1px black;
+    font-size: 1.2rem;
+}
+.welcome-card h3 {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px black;
+    margin-bottom: 1rem;
+}
+.products {
+    background-image: linear-gradient(rgba(0,0,0,.322), rgba(0,0,0,.322) ), url("../assets/img/products.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.brewing {
+    background-image: linear-gradient(rgba(0,0,0,.322), rgba(0,0,0,.322) ), url("../assets/img/brewing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about {
+    background-image: linear-gradient(rgba(0,0,0,.322), rgba(0,0,0,.322) ), url("../assets/img/about.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* -------- action ---------- */
+#action {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    margin: 4rem 0 10rem 0;
+}
+#action h2, #tips h2 {
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+.action-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5rem 2rem 5rem;
+    gap: 2.5rem;
+}
+.action-card {
+    background-color: var(--main-white);
+    width: 22rem;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+
+}
+.action-card img {
+    height: 380px;
+    width: auto;
+}
+.action-card h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.price {
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
