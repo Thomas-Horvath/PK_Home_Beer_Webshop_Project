@@ -9,10 +9,10 @@
 
 /* ---------------- Variables --------------*/
 :root {
---main-gray: #ebebeb;
---main-grayS: #a8dadc;
---main-white: #ffffff;
---main-beer: #dbdc9d;
+    --main-gray: #ebebeb;
+    --main-grayS: #a8dadc;
+    --main-white: #ffffff;
+    --main-beer: #dbdc9d;
 
 }
 
@@ -22,10 +22,12 @@ body {
     background: var(--main-gray);
     min-width: 1280px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 .btn {
     background-color: var(--main-gray);
     color: black;
@@ -33,11 +35,13 @@ a {
     transition: .2s linear;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .btn:hover {
-   cursor: pointer;
-   outline: 3px solid #e6b90a;
-   transform: scale(1.1); 
+    cursor: pointer;
+    outline: 3px solid #e6b90a;
+    transform: scale(1.1);
 }
+
 /* --------------------------- Header ---------------------------- */
 
 /* nav */
@@ -52,6 +56,7 @@ nav {
     padding: 0 0.5rem;
     box-shadow: 0px 5px 5px rgba(17, 17, 26, 0.1);
 }
+
 .logo img {
     height: 85px;
 }
@@ -64,36 +69,43 @@ nav {
     align-items: center;
     gap: 2.5rem;
 }
+
 .nav-menu li {
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: .2rem;
 }
+
 .nav-menu li a:hover {
     cursor: pointer;
-    color: rgba(0,0,0,0.489);
+    color: rgba(0, 0, 0, 0.489);
 }
+
 .cart-area {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
 }
+
 .nav-icon img {
     width: 1.2rem;
 }
-.cart-area span, .cart-text {
+
+.cart-area span,
+.cart-text {
     font-size: 1.1rem;
 }
+
 .cart-area span:hover {
     cursor: pointer;
-    color: rgba(0,0,0,0.489);
+    color: rgba(0, 0, 0, 0.489);
 }
 
 /* --------------------------- Main ---------------------------- */
 /*  -------- banner ------------- */
 .banner {
-    background-image: linear-gradient(rgba(0,0,0,.425), rgba(0,0,0,.425) ), url("../assets/img/banner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .425), rgba(0, 0, 0, .425)), url("../assets/img/banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -105,6 +117,7 @@ nav {
     align-items: center;
     gap: 2rem;
 }
+
 .banner h1 {
     font-size: 4.5rem;
     font-weight: bold;
@@ -112,6 +125,7 @@ nav {
     text-shadow: 1px 1px 1px black;
     letter-spacing: 1rem;
 }
+
 .banner h2 {
     font-size: 1.6rem;
     letter-spacing: .2rem;
@@ -136,7 +150,7 @@ nav {
     background-color: var(--main-white);
     width: 25rem;
     height: 20rem;
-    box-shadow:1.95px 1.95px 2.6px rgba(0,0,0,.15) ;
+    box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, .15);
     outline: 8px solid white;
     display: flex;
     flex-direction: column;
@@ -146,29 +160,34 @@ nav {
     color: var(--main-white);
 
 }
+
 .welcome-card button {
     width: 8.2rem;
     height: 3rem;
-    text-shadow:  1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
     font-size: 1.2rem;
 }
+
 .welcome-card h3 {
     font-size: 1.8rem;
     text-shadow: 1px 1px black;
     margin-bottom: 1rem;
 }
+
 .products {
-    background-image: linear-gradient(rgba(0,0,0,.322), rgba(0,0,0,.322) ), url("../assets/img/products.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .322), rgba(0, 0, 0, .322)), url("../assets/img/products.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .brewing {
-    background-image: linear-gradient(rgba(0,0,0,.322), rgba(0,0,0,.322) ), url("../assets/img/brewing.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .322), rgba(0, 0, 0, .322)), url("../assets/img/brewing.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .about {
-    background-image: linear-gradient(rgba(0,0,0,.322), rgba(0,0,0,.322) ), url("../assets/img/about.png");
+    background-image: linear-gradient(rgba(0, 0, 0, .322), rgba(0, 0, 0, .322)), url("../assets/img/about.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -182,12 +201,15 @@ nav {
     text-align: center;
     margin: 4rem 0 10rem 0;
 }
-#action h2, #tips h2 {
+
+#action h2,
+#tips h2 {
     font-size: 2.5rem;
     letter-spacing: .5rem;
     font-style: italic;
     margin-bottom: 2rem;
 }
+
 .action-cards {
     display: flex;
     justify-content: center;
@@ -195,6 +217,7 @@ nav {
     padding: 0 5rem 2rem 5rem;
     gap: 2.5rem;
 }
+
 .action-card {
     background-color: var(--main-white);
     width: 22rem;
@@ -203,19 +226,98 @@ nav {
     box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
 
 }
+
 .action-card img {
     height: 380px;
     width: auto;
 }
+
 .action-card h3 {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: .5rem;
 }
+
 .price {
     font-size: 1.3rem;
     letter-spacing: .1rem;
     font-weight: bold;
     color: red;
     text-shadow: 1px 1px 1px black;
+}
+
+/* ------- subscribe ---------- */
+#subscribe {
+    padding: 5rem;
+}
+
+.subscribe-card {
+    background-color: var(--main-white);
+    width: 100%;
+    height: 50rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url("../assets/img/frombg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.subscribe-card h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+form {
+    text-align: center;
+}
+
+.subscribe-card input[type="text"] {
+    background-color: transparent;
+    border: 1px solid var(--main-white);
+    width: 15rem;
+    height: 4rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: var(--main-white);
+    margin: 0.2rem;
+}
+
+.subscribe-card input::placeholder {
+    color: var(--main-white);
+    font-size: 1.3rem;
+}
+
+.licence {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 4rem;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    text-align: start;
+}
+.licence input[type="checkbox"] {
+    margin-left: 1.2rem;
+    width: 1.5rem;
+}
+
+input[type="submit"] {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
 }
