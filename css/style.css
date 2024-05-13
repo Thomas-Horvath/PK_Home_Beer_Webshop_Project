@@ -311,6 +311,7 @@ form {
     font-size: 1.1rem;
     text-align: start;
 }
+
 .licence input[type="checkbox"] {
     margin-left: 1.2rem;
     width: 1.5rem;
@@ -320,4 +321,61 @@ input[type="submit"] {
     width: 15rem;
     height: 3rem;
     font-size: 1.5rem;
+}
+
+
+/* --------- tips section ---------- */
+#tips h2 {
+    text-align: center;
+    margin: 5rem 0 4rem 0;
+}
+
+.tips-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 8rem 1rem;
+}
+
+.tips-card {
+    background-color: var(--main-white);
+    width: 21rem;
+    min-height: 30rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.tips-card img {
+    width: 100%;
+}
+
+.tips-card h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.date {
+    margin: 0 0 0.5rem 0.1rem;
+}
+
+.text {
+    padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.tips-card:nth-child(2) {
+    min-height: 35rem;
+    width: 22rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+.tips-card button {
+    width: 9rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
