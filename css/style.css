@@ -20,7 +20,7 @@
 /* --------------- General style ------------------------- */
 body {
     background: var(--main-gray);
-    min-width: 1280px;
+    min-width: 350px;
 }
 
 a {
@@ -51,12 +51,13 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-
     width: 100%;
     padding: 0 0.5rem;
     box-shadow: 0px 5px 5px rgba(17, 17, 26, 0.1);
 }
-
+.hMenu {
+    display: none;
+}
 .logo img {
     height: 85px;
 }
